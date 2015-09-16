@@ -1,1 +1,20 @@
+section.high>ul { 
+  background-color:red;
+  color:white;
+}
 
+section.medium>ul {
+  background-color:orange;
+  color:brown;
+}
+
+section.low>ul {
+  background-color:gray;
+  color:black;
+}
+
+section.finished>ul {
+  background-color:black;
+  color:cyan;
+  text-decoration:line-through;
+}
