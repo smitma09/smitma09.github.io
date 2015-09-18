@@ -18,3 +18,8 @@ section.finished>ul {
   color:cyan;
   text-decoration:line-through;
 }
+
+section {
+  height: 200px
+  width: 300px;
+}
