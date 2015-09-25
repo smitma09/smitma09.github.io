@@ -9,7 +9,8 @@ nav {
 
 nav li {
   display: inline;
-  padding: 15px;
+  padding: 10px;
+  color: rgb(225,225,225);
 }
 
 nav a {
