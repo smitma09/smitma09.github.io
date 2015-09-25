@@ -7,3 +7,7 @@ nav {
   right=0px;
   color: white;
 }
+
+nav li {
+  display: inline;
+}
