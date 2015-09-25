@@ -1,8 +1,8 @@
 nav {
-  height: 75px;
+  height: 50px;
   background-color: blue;
   width: 100%;
-  position: fixed
+  position: fixed;
 }
 
 nav>ul {
