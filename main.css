@@ -9,6 +9,7 @@ nav {
 
 nav li {
   display: inline;
+  padding: 50px;
 }
 
 nav a {
