@@ -3,8 +3,6 @@ nav {
   background-color: blue;
   width: 100%;
   position: fixed;
-}
-
-nav>ul {
+  list-style-type: none;
   color: white;
 }
