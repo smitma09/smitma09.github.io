@@ -13,6 +13,10 @@ nav li {
   color: black;
 }
 
+nav li:hover {
+  background-color: black;
+}
+
 nav a {
   color: rgb(240,240,240);
 }
