@@ -21,7 +21,16 @@ nav  li a:hover {
   background-color: black;
 }
 
-body {
-  margin-top=60px;
+.left {
+  margin-top: 60px;
+  display: inline;
+  width: 50%;
 }
+
+.right {
+  margin-top: 60px;
+  display: inline;
+  width: 50%;
+}
+
 
