@@ -23,13 +23,13 @@ nav  li a:hover {
 
 .left {
   margin-top: 60px;
-  display: inline;
+  float: left;
   width: 50%;
 }
 
 .right {
   margin-top: 60px;
-  display: inline;
+  float: left;
   width: 50%;
 }
 
