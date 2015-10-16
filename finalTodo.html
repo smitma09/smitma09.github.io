@@ -2,10 +2,23 @@
   <body>
     <section>
       <h1>Header...</h1>
+      <p>
+        <ul id="todoList">
+        </ul>
+      </p>
     </section>
     
     <div>
-      <p>Enter task:<input type="text" value="Enter task here"><select id="priority"><option>High</option><option>Medium</option><option>Low</option></select><button>New</button></p>
+      <p>Enter task:<input type="text" value="Enter task here" id="task"><select id="priority"><option>High</option><option>Medium</option><option>Low</option></select><button onClick="addTask()">New</button></p>
+      <script>
+        addTask = function() {
+          taskText = document.querySelector("#task");
+          task = document.createElement("li");
+          checkbox = document.createElement("input type=checkbox");
+          task.appendChild(checkbox);
+          task.appendChild(taskText);
+        }
+      </script>
     </div>
   </body>
 </html>
