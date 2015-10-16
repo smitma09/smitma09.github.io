@@ -16,7 +16,8 @@
         addTask = function() {
           mainList = document.querySelector("#todoList");
           task = document.createElement("li");
-          taskText = document.querySelector("#task").value;
+          taskValue = document.querySelector("#task").value;
+          taskText = document.createTextNode(taskValue);
           checkbox = document.createElement("input type=checkbox");
           priority = document.querySelector("#priority").value;
           task.className = priority;
