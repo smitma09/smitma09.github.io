@@ -14,17 +14,18 @@
       <!-- <script type="text/javascript" src="finalTodo.js"></script> -->
       <script>
         addTask = function() {
+          
           mainList = document.querySelector("#todoList");
           task = document.createElement("li");
-          taskValue = document.querySelector("#task").value;
-          taskText = document.createTextNode(taskValue);
-          checkbox = document.createElement("input type=checkbox");
-          priority = document.querySelector("#priority").value;
-          task.className = priority;
+          inputValue = document.querySelector("#task").value;
+          taskText = document.createTextNode(inputValue);
           
+          <!-- checkbox = document.createElement("input"); checkbox aspect not working... -->
+ 
           mainList.appendChild(task);
           task.appendChild(checkbox);
           task.appendChild(taskText);
+          
         }
       </script>
       
