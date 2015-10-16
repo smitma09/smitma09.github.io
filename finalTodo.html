@@ -1,7 +1,7 @@
 <html>
   <body>
     <section>
-      <h1>Header...</h1>
+      <h1 color=red>Header...</h1>
       <p>
         <ul id="todoList">
         </ul>
@@ -13,15 +13,17 @@
       <!-- <script type="text/javascript" src="finalTodo.js"></script> -->
       <script>
         addTask = function() {
-          mainList = document.querySelector("todoList");
-          taskText = document.querySelector("#task").value;
+          mainList = document.querySelector("#todoList");
           task = document.createElement("li");
+          taskText = document.querySelector("#task").value;
           checkbox = document.createElement("input type=checkbox");
           priority = document.querySelector("#priority").value;
+          task.className = priority;
           
-          
+          mainList.appendChild(task)
           task.appendChild(checkbox);
           task.appendChild(taskText);
+          
           
           
         }
