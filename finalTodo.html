@@ -12,11 +12,17 @@
       <p>Enter task:<input type="text" value="Enter task here" id="task"><select id="priority"><option>High</option><option>Medium</option><option>Low</option></select><button onClick="addTask()">New</button></p>
       <script>
         addTask = function() {
-          taskText = document.querySelector("#task");
+          mainList = document.querySelector("todoList");
+          taskText = document.querySelector("#task").value;
           task = document.createElement("li");
           checkbox = document.createElement("input type=checkbox");
+          priority = document.querySelector("#priority").value;
+          
+          
           task.appendChild(checkbox);
           task.appendChild(taskText);
+          
+          
         }
       </script>
     </div>
