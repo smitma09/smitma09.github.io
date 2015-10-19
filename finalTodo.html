@@ -4,7 +4,7 @@
     </head>
   <body>
     <section>
-      <h1 style="color:red">Header...</h1>
+      <h1 style="color:blue">Header...</h1>
       <p>
         <ul id="todoList">
         </ul>
@@ -42,7 +42,9 @@
         
         checked = function() {
           <!-- Code goes here to create strikethru when checked -->
-          this.parentNode.classList.add("finished");
+          task = this.parentNode; <!-- .classList.add("finished"); -->
+          currentClass = task.className;
+          task.className = currentClass + "finished";
           
         }
 
