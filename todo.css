@@ -1,8 +1,8 @@
-  .high { color:red; }
+  .High { color:red; }
   
-  .medium { color:orange; }
+  .Medium { color:orange; }
   
-  .low { color:gray; }
+  .Low { color:gray; }
   
   .finished { text-decoration:line-through; }
   
