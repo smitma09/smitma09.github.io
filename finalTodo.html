@@ -4,7 +4,7 @@
     </head>
   <body>
     <section>
-      <h1 style="color:red">Header...</h1>
+      <h1 style="color:green">Header...</h1>
       <p>
         <ul id="todoList">
         </ul>
@@ -13,7 +13,11 @@
     
     <div>
       <p>Enter task:<input type="text" value="Enter task here" id="task">
-      <select id="priority"><option>High</option><option>Medium</option><option>Low</option></select>
+      <select id="priority">
+          <option>High</option>
+          <option>Medium</option>
+          <option>Low</option>
+       </select>
       <button onClick="addTask()">New</button></p>
       <!-- <script type="text/javascript" src="finalTodo.js"></script> -->
       <script>
@@ -26,18 +30,19 @@
           priorityValue = document.querySelector("#priority").value;
           
           checkbox = document.createElement("input");
-          checkbox.setAttribute("type", "checkbox");
-          checkbox.setAttribute("onClick", "checked()");
+          checkbox.type = "checkbox";
+          checkbox.onClick = checked;
  
           mainList.appendChild(task);
           task.appendChild(checkbox);
           task.appendChild(taskText);
-          task.className = priorityValue;
+          task.className = priorityValue; <!-- Lets CSS rules color task based on priority-->
           
         }
         
         checked = function() {
           <!-- Code goes here to create strikethru when checked -->
+          alert("Hello...");
         }
 
       </script>
