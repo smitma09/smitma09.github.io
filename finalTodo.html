@@ -4,7 +4,7 @@
     </head>
   <body>
     <section>
-      <h1 style="color:blue">Header...</h1>
+      <h1 style="color:green">Header...</h1>
       <p>
         <ul id="todoList">
         </ul>
@@ -21,8 +21,11 @@
       <button onClick="addTask()">New</button></p>
       <!-- <script type="text/javascript" src="finalTodo.js"></script> -->
       <script type="text/javascript">
+      check = function() {
+          this.parentNode.classList.add("finished");
+        }
+        
         addTask = function() {
-          
           mainList = document.querySelector("#todoList");
           task = document.createElement("li");
           inputValue = document.querySelector("#task").value;
@@ -31,18 +34,12 @@
           
           checkbox = document.createElement("input");
           checkbox.type = "checkbox";
-          checkbox.onClick = checked;
+          checkbox.onClick = check;
  
           mainList.appendChild(task);
           task.appendChild(checkbox);
           task.appendChild(taskText);
           task.className = priorityValue; <!-- Lets CSS rules color task based on priority-->
-        }
-        
-        checked = function() {
-          task = this.parentNode; <!-- .classList.add("finished"); -->
-          currentClass = task.className;
-          task.className = currentClass + "finished";
         }
 
       </script>
