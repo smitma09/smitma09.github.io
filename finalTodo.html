@@ -1,7 +1,10 @@
 <html>
+    <head>
+      <link rel=stylesheet href=todo.css type=text/css />
+    </head>
   <body>
     <section>
-      <h1 style="color:red">Header...</h1>
+      <h1 style="color:blue">Header...</h1>
       <p>
         <ul id="todoList">
         </ul>
@@ -20,6 +23,7 @@
           task = document.createElement("li");
           inputValue = document.querySelector("#task").value;
           taskText = document.createTextNode(inputValue);
+          priorityValue = document.querySelector("#priority").value;
           
           checkbox = document.createElement("input");
           checkbox.setAttribute("type", "checkbox");
@@ -27,6 +31,7 @@
           mainList.appendChild(task);
           task.appendChild(checkbox);
           task.appendChild(taskText);
+          task.className = priorityValue;
           
           
         }
