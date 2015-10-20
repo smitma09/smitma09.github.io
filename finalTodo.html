@@ -21,10 +21,10 @@
       <button onClick="addTask()">New</button></p>
       <!-- <script type="text/javascript" src="finalTodo.js"></script> -->
       <script type="text/javascript">
-      <!-- check = function() {
-          alert("Box checked");
+      check = function() {
+          <!-- alert("Box checked"); -->
           this.parentNode.classList.add("finished");
-        } -->
+        }
         
         addTask = function() {
           mainList = document.querySelector("#todoList");
@@ -35,7 +35,7 @@
           
           checkbox = document.createElement("input");
           checkbox.type = "checkbox";
-          checkbox.onClick = function() {this.parentNode.classList.add("finished")};
+          checkbox.onclick = check;
  
           mainList.appendChild(task);
           task.appendChild(checkbox);
