@@ -8,10 +8,9 @@
   
   h1 { font-size:30px; }
   
-  body {
+  ul {
     background-color: blue;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    height: auto;
   }
