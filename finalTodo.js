@@ -16,5 +16,11 @@ addTask = function() {
 }
         
 check = function() {
-  this.parentNode.classList.add("finished");
+  if (this.checked) { <!-- If not checked previously-->
+    this.parentNode.classList.add("finished");
+  }
+  else { <!-- Else, previously was checked -->
+    this.parentNode.classList.remove("finished");
+  }
+  
 }
