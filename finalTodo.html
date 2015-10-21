@@ -3,8 +3,11 @@
       <link rel=stylesheet href=todo.css type=text/css />
     </head>
   <body>
+    <script type="text/jacascript">
+        window.onload = function() { restoreList("todoList",check) }
+    </script>
     <section>
-      <h1 style="color:magenta">Header...</h1>
+      <h1 style="color:green">Header...</h1>
       <p>
         <ul id="todoList">
         </ul>
@@ -20,7 +23,12 @@
        </select>
       <button onClick="addTask()">New</button></p>
       
-      <script type="text/javascript" src="finalTodo.js"></script> <!-- http://bnmetp.github.io/CS130/listsaver.js -->
+      <script type="text/javascript" src="finalTodo.js"></script>
+      
+      <script type="text/javascript" src="http://bnmetp.github.io/CS130/listsaver.js"></script>
+      
+      <!-- localSave("todoList");
+        restoreList("todoList", check) -->
 
     </div>
     
