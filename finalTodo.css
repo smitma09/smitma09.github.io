@@ -1,0 +1,9 @@
+  .High { color:red; }
+  
+  .Medium { color:orange; }
+  
+  .Low { color:gray; }
+  
+  .finished { text-decoration:line-through; }
+  
+  h1 { font-size:30px; }
