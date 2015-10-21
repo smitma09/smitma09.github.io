@@ -7,3 +7,26 @@
   .finished { text-decoration:line-through; }
   
   h1 { font-size:30px; }
+  
+  nav {
+  position: fixed;
+  top=0px;
+  left=0px;
+  height: 50px;
+  background-color: blue;
+  width: 100%;
+}
+
+nav li {
+  display: inline;
+  padding: 10px;
+  color: black;
+}
+
+nav a {
+  color: rgb(240,240,240);
+}
+
+nav  li a:hover {
+  background-color: black;
+}
