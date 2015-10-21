@@ -7,3 +7,11 @@
   .finished { text-decoration:line-through; }
   
   h1 { font-size:30px; }
+  
+  body {
+    background-color: blue;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
