@@ -6,11 +6,16 @@
   
   .finished { text-decoration:line-through; }
   
-  h1 { font-size:30px; }
+  h1 {
+    font-size:30px; 
+    background-color: blue;
+    padding: 15px;
+  }
   
   section {
     background-color: blue;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    padding: 15px;
   }
