@@ -12,15 +12,15 @@ addTask = function() {
   mainList.appendChild(task);
   task.appendChild(checkbox);
   task.appendChild(taskText);
-  task.className = priorityValue; <!-- Lets CSS rules color task based on priority-->
+  task.className = priorityValue;
   localSave("todoList");
 }
         
 check = function() {
-  if (this.checked) { <!-- If not checked previously-->
+  if (this.checked) {
     this.parentNode.classList.add("finished");
   }
-  else { <!-- Else, previously was checked -->
+  else {
     this.parentNode.classList.remove("finished");
   }
   localSave("todoList");
