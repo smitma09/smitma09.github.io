@@ -14,7 +14,7 @@ addTask = function() {
   task.appendChild(taskText);
   task.className = priorityValue; <!-- Lets CSS rules color task based on priority-->
   localSave("todoList");
-} <!-- End addTask func. -->
+}
         
 check = function() {
   if (this.checked) { <!-- If not checked previously-->
@@ -24,4 +24,4 @@ check = function() {
     this.parentNode.classList.remove("finished");
   }
   localSave("todoList");
-} <!-- End check func. -->
+}
